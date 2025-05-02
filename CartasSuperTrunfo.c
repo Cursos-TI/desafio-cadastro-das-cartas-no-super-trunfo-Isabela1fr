@@ -102,19 +102,66 @@ int main() {
     printf("PIB per capita:%.2f reais\n", pibpercapita2);
     printf("Super poder:%.2f\n", superpoder2);
 
-    int resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7;
-    // comparação da carta 1 com a carta dois sendo o resultado 1 a carta 1 venceu e 0 a segunda carta vence
-    resultado1 = populacao1 > populacao2;
-    resultado2 = area1 > area2;
-    resultado3 = pib1 > pib2;
-    resultado4 = turismo1 > turismo2;
-    resultado5 = densidadepop1 < densidadepop2;
-    resultado6 = pibpercapita1 > pibpercapita2;
-    resultado7 = superpoder1 > superpoder2;
+     // comparação da carta 1 com a carta dois utilizando if e else
+    printf("-------Resultado das comparações:---------\n");
+     if (populacao1 > populacao2)
+     {
+         printf("População: Acarta 1 venceu!!\n");
+     }
+     else
+     {
+         printf("População: A carta 2 Venceu!!\n");
+     }
+     if (area1 > area2)
+     {
+         printf("Área: Acarta 1 venceu!!\n");
+     }
+     else
+     {
+         printf("Área: A carta 2 Venceu!!\n");
+     }
+     if (pib1 > pib2)
+     {
+         printf("PIB: Acarta 1 venceu!!\n");
+     }
+     else
+     {
+         printf("PIB: A carta 2 Venceu!!\n");
+     }
+     if (turismo1 > turismo2)
+     {
+         printf("Turismo: Acarta 1 venceu!!\n");
+     }
+     else
+     {
+         printf("Turismo: A carta 2 Venceu!!\n");
+     }
+     if (densidadepop1 < densidadepop2)
+     {
+         printf("Densidade Populacional: Acarta 1 venceu!!\n");
+     }
+     else
+     {
+         printf("Densidade Populacional: A carta 2 Venceu!!\n");
+     }
+     if (pibpercapita1 < pibpercapita2)
+     {
+         printf("PIB per capita: Acarta 1 venceu!!\n");
+     }
+     else
+     {
+         printf("PIB per capita: A carta 2 Venceu!!\n");
+     }
 
-    printf("-------Comparação das cartas:------\n");
-    printf("População: %d\n Área: %d\n PIB: %d\n Pontos turísticos: %d\n Densidade populacional: %d\n PIB per capita: %d\n Super poder: %d\n ", resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7);
-    
+     if (superpoder1< superpoder2)
+     {
+         printf("SUPER PODER: Acarta 1 venceu!!\n");
+     }
+     else
+     {
+         printf("SUPER PODER: A carta 2 Venceu!!\n");
+     }
+   
 
     return 0;
 }
